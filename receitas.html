@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodAju - Receitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-roboto">
+    <header class="fixed top-0 w-full bg-white shadow-md z-10">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <a href="./index.html" class="text-2xl font-bold text-black px-4 py-2 rounded">
+                FoodAju
+            </a>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="sobre.html" class="text-black hover:text-blue-500 transition duration-300 border-b-2 border-transparent hover:border-blue-500">Sobre</a>
+                <a href="receitas.html" class="text-black hover:text-blue-500 transition duration-300 border-b-2 border-transparent hover:border-blue-500">Receitas</a>
+                <a href="contato.html" class="text-black hover:text-blue-500 transition duration-300 border-b-2 border-transparent hover:border-blue-500">Contato</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-16 right-6 bg-white shadow-md p-4 rounded-lg space-y-2 opacity-0 translate-y-2 transition-all duration-300">
+                <a href="sobre.html" class="block text-black hover:text-blue-500 transition duration-300">Sobre</a>
+                <a href="receitas.html" class="block text-black hover:text-blue-500 transition duration-300">Receitas</a>
+                <a href="contato.html" class="block text-black hover:text-blue-500 transition duration-300">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-20 container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center mb-6">Nossas Receitas</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card cursor-pointer transform transition duration-500 hover:scale-105 hover:shadow-lg" id="burger">
+                <img src="assets/burger.png" alt="Burger" class="w-full h-40 object-cover rounded-xl">
+                <div class="mt-2">
+                    <p class="nome text-lg font-semibold">Triplo bacon burger</p>
+                    <p class="chef text-sm text-gray-600">por Jorge Relato</p>
+                </div>
+            </div>
+            <div class="card cursor-pointer transform transition duration-500 hover:scale-105 hover:shadow-lg" id="pizza">
+                <img src="assets/pizza.png" alt="Pizza" class="w-full h-40 object-cover rounded-xl">
+                <div class="mt-2">
+                    <p class="nome text-lg font-semibold">Pizza 4 estações</p>
+                    <p class="chef text-sm text-gray-600">por Faciana Melo</p>
+                </div>
+            </div>
+            <div class="card cursor-pointer transform transition duration-500 hover:scale-105 hover:shadow-lg" id="espaguete">
+                <img src="assets/espaguete.png" alt="Espaguete" class="w-full h-40 object-cover rounded-xl">
+                <div class="mt-2">
+                    <p class="nome text-lg font-semibold">Espaguete ao alho</p>
+                    <p class="chef text-sm text-gray-600">por Júlia Kinoto</p>
+                </div>
+            </div>
+            <div class="card cursor-pointer transform transition duration-500 hover:scale-105 hover:shadow-lg" id="lasanha">
+                <img src="assets/lasanha.png" alt="Lasanha" class="w-full h-40 object-cover rounded-xl">
+                <div class="mt-2">
+                    <p class="nome text-lg font-semibold">Lasanha mac n' cheese</p>
+                    <p class="chef text-sm text-gray-600">por Juliano Vieira</p>
+                </div>
+            </div>
+            <div class="card cursor-pointer transform transition duration-500 hover:scale-105 hover:shadow-lg" id="doce">
+                <img src="assets/doce.png" alt="Doce" class="w-full h-40 object-cover rounded-xl">
+                <div class="mt-2">
+                    <p class="nome text-lg font-semibold">Docinho pão-do-céu</p>
+                    <p class="chef text-sm text-gray-600">por Rirecipeo Golvea</p>
+                </div>
+            </div>
+            <div class="card cursor-pointer transform transition duration-500 hover:scale-105 hover:shadow-lg" id="asinhas">
+                <img src="assets/asinhas.png" alt="Asinhas" class="w-full h-40 object-cover rounded-xl">
+                <div class="mt-2">
+                    <p class="nome text-lg font-semibold">Asinhas de frango ao barbecue</p>
+                    <p class="chef text-sm text-gray-600">por Vania Steroski</p>
+                </div>
+            </div>
+            <!-- Removed duplicate cards -->
+        </div>
+    </main>
+
+    <footer class="bg-gray-200 py-4 mt-12">
+        <p class="text-center text-gray-600">Todos os direitos reservados, FoodAju receitas.</p>
+    </footer>
+
+    <div class="modal_overlay fixed inset-0 bg-black bg-opacity-70 hidden">
+        <div class="modal bg-white rounded-2xl w-11/12 max-w-2xl mx-auto mt-20 p-6">
+            <img src="" class="modal-image w-full h-48 object-cover rounded-xl">
+            <div class="text-center mt-4">
+                <h1 class="nome text-2xl font-bold"></h1>
+                <p class="chef text-lg text-gray-600"></p>
+            </div>
+            <button class="modal_close block mx-auto mt-6 text-gray-500 hover:text-gray-700">Fechar modal</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

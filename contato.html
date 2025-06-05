@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodAju - Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-roboto">
+    <header class="fixed top-0 w-full bg-white shadow-md z-10">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <a href="./index.html" class="text-2xl font-bold text-black px-4 py-2 rounded">
+                FoodAju
+            </a>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="sobre.html" class="text-black hover:font-bold">Sobre</a>
+                <a href="receitas.html" class="text-black hover:font-bold">Receitas</a>
+                <a href="contato.html" class="text-black hover:font-bold">Contato</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-16 right-6 bg-white shadow-md p-4 rounded-lg space-y-2">
+                <a href="sobre.html" class="block text-black hover:font-bold">Sobre</a>
+                <a href="receitas.html" class="block text-black hover:font-bold">Receitas</a>
+                <a href="contato.html" class="block text-black hover:font-bold">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-20 container mx-auto p-6 min-h-screen">
+        <h1 class="text-3xl font-bold mb-6">Entre em Contato</h1>
+        <form id="contact-form" class="max-w-lg mx-auto">
+            <div class="mb-4">
+                <label for="name" class="block text-lg mb-2">Nome</label>
+                <input type="text" id="name" class="w-full p-2 border rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-lg mb-2">E-mail</label>
+                <input type="email" id="email" class="w-full p-2 border rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-lg mb-2">Mensagem</label>
+                <textarea id="message" class="w-full p-2 border rounded" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Enviar</button>
+        </form>
+    </main>
+
+    <footer class="bg-gray-200 py-4 mt-12">
+        <p class="text-center text-gray-600">Todos os direitos reservados, FoodAju receitas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodAju - Sobre</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-roboto">
+    <header class="fixed top-0 w-full bg-white shadow-md z-10">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <a href="./index.html" class="text-2xl font-bold text-black px-4 py-2 rounded">
+                FoodAju
+            </a>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="sobre.html" class="text-black hover:text-blue-500 transition duration-300 border-b-2 border-transparent hover:border-blue-500">Sobre</a>
+                <a href="receitas.html" class="text-black hover:text-blue-500 transition duration-300 border-b-2 border-transparent hover:border-blue-500">Receitas</a>
+                <a href="contato.html" class="text-black hover:text-blue-500 transition duration-300 border-b-2 border-transparent hover:border-blue-500">Contato</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-16 right-6 bg-white shadow-md p-4 rounded-lg space-y-2 opacity-0 translate-y-2 transition-all duration-300">
+                <a href="sobre.html" class="block text-black hover:text-blue-500 transition duration-300">Sobre</a>
+                <a href="receitas.html" class="block text-black hover:text-blue-500 transition duration-300">Receitas</a>
+                <a href="contato.html" class="block text-black hover:text-blue-500 transition duration-300">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-20 container mx-auto p-6 min-h-screen">
+        <div class="about">
+            <h1 class="text-3xl font-bold mb-6">Sobre o FoodAju</h1>
+            <p class="mb-4">
+                Suspendisse placerat neque neque. Morbi dictum nulla non sapien rhoncus, et mattis erat commodo. Aliquam vel lacus a justo mollis luctus. Proin vel auctor eros, sed eleifend nunc. Curabitur eget tincidunt risus. Mauris malesuada facilisis magna, vitae volutpat sapien tristique eu. Morbi metus nunc, interdum in erat placerat, aliquam iaculis massa. Duis vulputate varius justo pharetra maximus. In vehicula enim nec nibh porta tincidunt. Vestibulum at ultrices turpis, non dictum metus. Vivamus ligula ex, semper vitae eros ut, euismod convallis augue.
+            </p>
+            <p class="mb-4">
+                Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut accumsan. Proin ligula lectus, rutrum vel nisl quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu ultrices lacus. Integer in tincidunt arcu, et posuere ligula. Morbi cursus facilisis feugiat. Praesent euismod nec nisl at accumsan. Donec libero neque, vulputate semper orci et, malesuada sodales eros. Nunc ut nulla faucibus enim ultricies euismod.
+            </p>
+            <h2 class="text-2xl font-bold mt-6 mb-4">Como tudo começou…</h2>
+            <p class="mb-4 hidden">
+                Suspendisse placerat neque neque. Morbi dictum nulla non sapien rhoncus, et mattis erat commodo. Aliquam vel lacus a justo mollis luctus. Proin vel auctor eros, sed eleifend nunc. Curabitur eget tincidunt risus. Mauris malesuada facilisis magna, vitae volutpat sapien tristique eu. Morbi metus nunc, interdum in erat placerat, aliquam iaculis massa. Duis vulputate varius justo pharetra maximus. In vehicula enim nec nibh porta tincidunt. Vestibulum at ultrices turpis, non dictum metus. Vivamus ligula ex, semper vitae eros ut, euismod convallis augue.
+            </p>
+            <p class="mb-4 hidden">
+                Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut accumsan. Proin ligula lectus, rutrum vel nisl quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu ultrices lacus. Integer in tincidunt arcu, et posuere ligula. Morbi cursus facilisis feugiat. Praesent euismod nec nisl at accumsan. Donec libero neque, vulputate semper orci et, malesuada sodales eros. Nunc ut nulla faucibus enim ultricies euismod.
+            </p>
+            <h2 class="text-2xl font-bold mt-6 mb-4">Nossas receitas</h2>
+            <p class="mb-4 hidden">
+                Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut accumsan. Proin ligula lectus, rutrum vel nisl quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu ultrices lacus. Integer in tincidunt arcu, et posuere ligula. Morbi cursus facilisis feugiat. Praesent euismod nec nisl at accumsan. Donec libero neque, vulputate semper orci et, malesuada sodales eros. Nunc ut nulla faucibus enim ultricies euismod.
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-200 py-4 mt-12">
+        <p class="text-center text-gray-600">Todos os direitos reservados, FoodAju receitas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
